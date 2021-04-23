@@ -18,6 +18,15 @@ body {
   color: $cBlue;
 }
 
+.other{
+  padding-top:15rem;
+  min-height:100vh;
+}
+
+.desc{
+  font-size:1.6rem;
+}
+
 *,
 *::before,
 *::after {
@@ -235,7 +244,7 @@ footer {
         padding-top: 100%;
       }
 
-      & img {
+      & img, canvas {
         position: absolute;
         top: 0;
         left: 0;
@@ -294,6 +303,18 @@ footer {
 
 .sp {
   display: none;
+}
+
+/*observer*/
+.obs-el{
+  transform:translateY(10px);
+  opacity:0;
+
+  transition:transform 0.7s, opacity 0.7s;
+  &.appear{
+      transform:translateY(0);
+      opacity:1;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -416,6 +437,9 @@ footer {
   }
 
   /*work*/
+  .desc{
+    font-size:3rem;
+  }
 
   .grid-wrapper {
     grid-template-columns: 1fr 1fr;
