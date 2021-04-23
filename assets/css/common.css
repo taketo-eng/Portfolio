@@ -27,6 +27,11 @@ body {
   box-sizing: border-box;
 }
 
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
 header {
   background-color: rgba(0, 50, 100, 0.8);
   padding: 0 10vw;
@@ -48,6 +53,10 @@ header {
   font-size: 3rem;
   color: white;
   user-select: none;
+}
+
+.logo a {
+  color: white;
 }
 
 .global-nav ul {

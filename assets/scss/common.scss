@@ -33,6 +33,11 @@ body {
   box-sizing: border-box;
 }
 
+a:link,
+a:visited{
+  text-decoration:none;
+}
+
 header {
   background-color: $cBlueTransBit;
   padding: 0 10vw;
@@ -55,6 +60,9 @@ header {
   font-size: 3rem;
   color: $cWhite;
   user-select: none;
+  & a{
+    color:white;
+  }
 }
 
 .global-nav {
